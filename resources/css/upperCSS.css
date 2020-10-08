@@ -1,0 +1,164 @@
+#upper {
+    display: grid;
+    border-bottom: 2px solid lightgray;
+    grid-template-columns: auto auto auto;
+    z-index: 1;
+    background-color: white;
+    padding: 0 5px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+}
+
+#wrapperAccount {
+    width: fit-content;
+    height: 100%;
+    float: right;
+}
+
+hr {
+    border: 1px solid lightgray;
+}
+
+#userStatus {
+    display: none;
+}
+
+#logo {
+    opacity: 0.5;
+    color: black;
+    font-weight: bold;
+    float: left;
+}
+
+#logo p {
+    width: fit-content;
+    height: 100%;
+    cursor: pointer;
+}
+
+#search {
+    width: 100%;
+    float: left;
+}
+
+#search form {
+    position: relative;
+}
+#dropDownResult {
+    z-index: 3;
+    position: absolute;
+    display: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    backdrop-filter: blur(10px);
+}
+.resultRow {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;;
+    padding-bottom: 10px;
+}
+.resultRow:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+}
+.hrSeparate {
+    margin: 0;
+}
+
+#searchbox {
+    display: block;
+    float: left;
+    font-weight: bold;
+    font-size: large;
+    width: 80%;
+    border: 1px solid black;
+    padding: 2px 0;
+}
+
+#searchButton {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#account,
+#logo,
+#search{
+    height: fit-content;
+    margin: auto 0;
+}
+#accountInfo {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    top: 8%;
+}
+
+#login,
+#logout {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    top: 30%;
+}
+
+#login {
+    background-color: #4CAF50;
+    outline: none;
+}
+
+#cart {
+    display: none;
+    cursor: pointer;
+    margin: 0 5px;
+    float: left;
+    position: relative;
+    top: 5%;
+}
+
+#loginImg {
+    display: none;
+}
+
+#login:hover {
+    cursor: pointer;
+    background-color: green;
+    animation-name: loginGlow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes loginGlow {
+    from {box-shadow: 0 0 0 green, 0 0 0 green, 0 0 0 green;}
+    to {box-shadow: 0 0 10px green, 0 0 40px green, 0 0 80px green;}
+}
+
+#logout {
+    display: none;
+    background-color: lightcoral;
+}
+
+#logoutImg {
+    display: none;
+}
+
+#logout:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #bdb2b1;
+    background-color: orange;
+}
+
+@media only screen and (max-width: 375px) {
+    #searchbox {
+        display: none;
+    }
+}
