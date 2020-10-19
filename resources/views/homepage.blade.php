@@ -22,7 +22,7 @@
             @for($i = 0; $i < count($stack); $i++)
                 @php($index = $stack[$i])
                 <div class="classes" id="class{{ $i }}">
-                    <p class="classID" id="{{ $strikingClass[$index]['id'] }}">Mã lớp: {{ $strikingClass[$index]['id'] }}</p>
+                    <p class="classID" id="{{ $strikingClass[$index]['id'] }}">Mã lớp đây: {{ $strikingClass[$index]['id'] }}</p>
                     <hr>
                     @foreach($subject as $singleSubject)
                         @if($strikingClass[$index]['subject'] == $singleSubject['code'])
